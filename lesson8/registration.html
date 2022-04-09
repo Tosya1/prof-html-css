@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/3e8c25bd64.js" crossorigin="anonymous"></script>
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class=" wrapper registration__wrapper">
+        <header class="header">
+            <div class="header__icons header__icons-catalog">
+                <ul class="header__left">
+                    <li>
+                        <img src="img/header_logo1.svg" alt="header-logo">
+                    </li>
+                    <li>
+                        <img src="img/search_icon.svg" alt="search_icon">
+                    </li>
+                </ul>
+                <ul class="header__right">
+                    <li>
+                        <img class="header__burger" src="img/burger_icon.svg" alt="burger_icon">
+                    </li>
+                    <li class="header__person">
+                        <img src="img/person_icon.svg" alt="person_icon">
+                    </li>
+                    <li>
+                        <div class="header__cart"><img src="img/cart_icon.svg" alt="cart_icon">
+                            <p class="header__number">5</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <nav class="nav-catalog">
+            <p>REGISTRATION</p>
+            <div class="brand__black brand__black-hidden">
+                <nav class="brand__nav">
+                    <img class="brand__close" src="img/close.svg" alt="close">
+                    <h4>MENU</h4>
+                    <div class="brand__menu-title"><a href="#">MAN</a></div>
+                    <a href="#">Accessories</a>
+                    <a href="#">Bags</a>
+                    <a href="#">Denim</a>
+                    <a href="#">T-Shirts</a>
+                    <div class="brand__menu-title"><a href="">WOMAN</a></div>
+                    <a href="#">Accessories</a>
+                    <a href="#">Jackets & Coats</a>
+                    <a href="#">Polos</a>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">Shirts</a>
+                    <div class="brand__menu-title"><a href="">KIDS</a></div>
+                    <a href="#">Accessories</a>
+                    <a href="#">Jackets & Coats</a>
+                    <a href="#">Polos</a>
+                    <a href="#">T-Shirts</a>
+                    <a href="#">Shirts</a>
+                    <a href="#">Bags</a>
+                </nav>
+            </div>
+        </nav>
+        <main class="main registration">
+            <div class="registration__left">
+                <form class="registration__form">
+                    <p>Your Name</p>
+                    <input class="registration__form-text" type="text" placeholder="First Name">
+                    <input class="registration__form-text" type="text" placeholder="Last Name">
+                    <div>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                    <p>Login details</p>
+                    <input class="registration__form-text" type="email" placeholder="Email"
+                        pattern="^([A-Za-z0-9\.-_]+)(@)([a-z0-9-]+)(\.)([a-z]{2,})$">
+                    <input class="registration__form-text" type="password" placeholder="Password">
+                    <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
+                        letters</p>
+                    <button type="submit">
+                        <span>JOIN NOW</span>
+                        <img src="img/arrow_reg.svg" alt="">
+                    </button>
+                </form>
+            </div>
+            <div class="registration__right">
+                <p>LOYALTY HAS ITS PERKS</p>
+                <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these
+                    as soon as you join:</p>
+                <ul>
+                    <li>15% off welcome offer</li>
+                    <li>Free shipping, returns and exchanges on all orders</li>
+                    <li>$10 off a purchase on your birthday</li>
+                    <li>Early access to products</li>
+                    <li>Exclusive offers & rewards</li>
+                </ul>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__subscribe">
+                <div class="footer__form">
+                    <div class="footer__form-left">
+                        <img src="img/subscribe.png" alt="subscribe">
+                        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a pulvinar purus
+                                condimentum</span> “</p>
+                    </div>
+                    <form class="footer__form-right">
+                        <h4>SUBSCRIBE</h4>
+                        <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                        <div class="footer__input">
+                            <input type="email" name="email" placeholder="Enter Your Email"
+                                pattern="^([A-Za-z0-9\.-_]+)(@)([a-z0-9-]+)(\.)([a-z]{2,})$">
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <div class="footer__bottom">
+                    <p>&copy; 2021 Brand All Rights Reserved.</p>
+                    <div class="footer__social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
